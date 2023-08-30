@@ -32,3 +32,10 @@ https://stackoverflow.com/questions/45390377/react-how-to-pass-returned-data-fro
 "name": "@vitejs/test-ssr-react",
 
 
+can't be found with:
+npm run build
+NODE_ENV  production
+no dev dependencies
+
+
+
