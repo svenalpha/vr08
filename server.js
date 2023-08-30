@@ -4,6 +4,9 @@ import { fileURLToPath } from 'node:url';
 /*  import express from '../vr08/node_modules/express/lib/express.js';   */
 
 import express from 'express'; 
+import vite from 'vite'; 
+
+
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
