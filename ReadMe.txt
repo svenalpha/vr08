@@ -38,4 +38,12 @@ NODE_ENV  production
 no dev dependencies
 
 
+"@vitejs/plugin-react":"^4.0.4",
+ "@vitejs/plugin-react":"workspace:*",
+
+outDir: path.join(__dirname, "dist"),
+import path from "path";
+
+
+
 
