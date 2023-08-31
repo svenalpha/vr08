@@ -5,6 +5,7 @@ import { App } from './App'
 ReactDOM.hydrateRoot(
   document.getElementById('app'),
   <BrowserRouter>
+  basename='/vr08/',
     <App />
   </BrowserRouter>,
 )
