@@ -8,7 +8,7 @@ export default defineConfig({
   base: '/',
   plugins: [react()],
   build: {
-    outDir: "../dist/client/",
+    outDir: "/dist/",
     emptyOutDir: true,
     minify: false,
   },
