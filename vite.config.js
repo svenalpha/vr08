@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 
 export default defineConfig({
-  base: '/',
+  base: '/vr08/',
   plugins: [react()],
   build: {
     minify: false,
