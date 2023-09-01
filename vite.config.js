@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 
 export default defineConfig({
-  base: '/client/',
+  base: '/',
   plugins: [react()],
   build: {
     minify: false,
