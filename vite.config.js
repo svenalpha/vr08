@@ -1,10 +1,10 @@
 import { resolve } from "path"; 
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-const outDir = resolve(__dirname,"dist");
+const outDiry = resolve(__dirname,"dist");
+console.log("outDiry = ",outDiry);
+const outDir = resolve(__dirname,"dist/client");
 console.log("outDir = ",outDir);
-const outDirx = resolve(__dirname,"dist/client");
-console.log("outDirx = ",outDirx);
 
 
 export default defineConfig({
