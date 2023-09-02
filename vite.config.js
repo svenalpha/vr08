@@ -9,7 +9,7 @@ console.log("outDir = ",outDir);
 
 export default defineConfig({
  
-  root: '/',
+  base: '/',
   plugins: [react()],
   build: {
     outDir,
