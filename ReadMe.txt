@@ -45,5 +45,6 @@ outDir: path.join(__dirname, "dist"),
 import path from "path";
 
  root: "src",
+ outDir: "/dist/client/",
 
 
