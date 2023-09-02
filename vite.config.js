@@ -10,7 +10,7 @@ const outDir = path.join(__dirname,"dist/client"); console.log("outDir = ",outDi
 
 
 export default defineConfig({
- 
+  root,
   base: '/',
   plugins: [react()],
   build: {
