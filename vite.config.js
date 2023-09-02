@@ -5,10 +5,11 @@ const outDiry = resolve(__dirname,"dist");
 console.log("outDiry = ",outDiry);
 const outDir = resolve(__dirname,"dist/client");
 console.log("outDir = ",outDir);
-
+const root = resolve(__dirname,"src");
+console.log("root = ",root);
 
 export default defineConfig({
- 
+   root,
   base: '/',
   plugins: [react()],
   build: {
