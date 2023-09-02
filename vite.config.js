@@ -9,7 +9,7 @@ console.log("outDir = ",outDir);
 
 export default defineConfig({
  
-  base: '/vr08/',
+  base: '/',
   plugins: [react()],
   build: {
     outDir,
