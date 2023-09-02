@@ -44,6 +44,6 @@ no dev dependencies
 outDir: path.join(__dirname, "dist"),
 import path from "path";
 
-
+ root: "src",
 
 
