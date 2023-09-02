@@ -6,7 +6,7 @@ const outDiry = resolve(__dirname,"dist");  console.log("outDiry = ",outDiry);
 const outDirx = resolve(__dirname,"dist/client");  console.log("outDirx = ",outDirx);
 const rootx  = resolve(__dirname,"src");   console.log("rootx = ",rootx);
 const root = path.join(__dirname,"src"); console.log("root = ",root);
-const outDir = path.join(__dirname,"dist"); console.log("outDir = ",outDir);
+const outDir = path.join(__dirname,"dist/client"); console.log("outDir = ",outDir);
 
 
 export default defineConfig({
