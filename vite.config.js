@@ -11,7 +11,7 @@ const outDir = path.join(__dirname,"dist/client"); console.log("outDir = ",outDi
 
 export default defineConfig({
   
-  base: '/vr08/',
+  base: '/',
   plugins: [react()],
   build: {
     outDir: "/dist/client/",
