@@ -9,7 +9,7 @@ const root = resolve(__dirname,"src");
 console.log("root = ",root);
 
 export default defineConfig({
-   root,
+   root: "/client/",
   base: '/',
   plugins: [react()],
   build: {
