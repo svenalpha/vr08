@@ -4,7 +4,7 @@ import { App } from './App'
 
 export function render(url, context) {
   return ReactDOMServer.renderToString(
-    <StaticRouter location={url} context={context}>
+    <StaticRouter location={url} context={context} basename="/vr08.onrender.com"  >
       <App />
     </StaticRouter>,
   )
