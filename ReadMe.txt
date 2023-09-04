@@ -48,4 +48,4 @@ import path from "path";
  outDir: "/dist/client/",     
    root: "/client/",
 
-
+ basename="/vr08.onrender.com"
