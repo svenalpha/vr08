@@ -4,7 +4,7 @@ import { App } from './App'
 
 ReactDOM.hydrateRoot(
   document.getElementById('app'),
-  <BrowserRouter>
+  <BrowserRouter basename="/vr08.onrender.com">
     <App />
   </BrowserRouter>,
 )
