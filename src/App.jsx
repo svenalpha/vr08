@@ -28,13 +28,16 @@ export function App() {
         </ul>
       </nav>
 
-<Outlet />
+
 
       <Routes>
         {routes.map(({ path, component: RouteComp }) => {
           return <Route key={path} path={path} element={<RouteComp />} ></Route>
         })}
       </Routes>
+      
+      <Outlet />
+
     </>
   )
 }
