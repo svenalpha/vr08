@@ -29,7 +29,7 @@ export function App() {
       </nav>
       <Routes>
         {routes.map(({ path, component: RouteComp }) => {
-          return <Route key={path} path={path} element={<RouteComp />}></Route>
+          return <Route key={path} path={path} element={<RouteComp />} basename={"/vr08.onrender.com"}></Route>
         })}
       </Routes>
     </>
