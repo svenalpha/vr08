@@ -27,7 +27,7 @@ export function App() {
           })}
         </ul>
       </nav>
-      <Routes>
+      <Routes  basename="/vr08.onrender.com">
         {routes.map(({ path, component: RouteComp }) => {
           return <Route key={path} path={path} element={<RouteComp />}></Route>
         })}
