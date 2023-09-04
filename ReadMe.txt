@@ -49,3 +49,4 @@ import path from "path";
    root: "/client/",
 
  basename="/vr08.onrender.com"
+ basename={"/vr08.onrender.com"}
