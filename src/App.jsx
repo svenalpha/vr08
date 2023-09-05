@@ -23,24 +23,14 @@ export function App() {
               <li key={path}>
                 <Link to={path}>{name}</Link>
               </li>
-             
             )
           })}
-            <Outlet />
-
         </ul>
-
-
       </nav>
-
-     
-
       <Routes>
         {routes.map(({ path, component: RouteComp }) => {
           return <Route key={path} path={path} element={<RouteComp />} ></Route>
         })}
-
-
       </Routes>
       
      
