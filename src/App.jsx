@@ -26,9 +26,11 @@ export function App() {
             )
           })}
         </ul>
+
+
       </nav>
 
-
+      <Outlet /> 
 
       <Routes>
         {routes.map(({ path, component: RouteComp }) => {
@@ -36,7 +38,7 @@ export function App() {
         })}
       </Routes>
       
-      <Outlet />
+     
 
     </>
   )
