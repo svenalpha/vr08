@@ -37,10 +37,10 @@ export function App() {
           return <Route key={path} path={path} element={<RouteComp />} ></Route>
         })}
 
-<Outlet /> 
+
       </Routes>
       
-     
+      <Outlet /> 
 
     </>
   )
