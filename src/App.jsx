@@ -23,8 +23,11 @@ export function App() {
               <li key={path}>
                 <Link to={path}>{name}</Link>
               </li>
+             
             )
           })}
+            <Outlet />
+
         </ul>
 
 
