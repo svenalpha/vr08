@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Outlet } from 'react-router-dom'
 import { App } from './App'
 
 ReactDOM.hydrateRoot(
@@ -7,5 +7,6 @@ ReactDOM.hydrateRoot(
   <BrowserRouter >
     <App />
   </BrowserRouter>,
+    <Outlet />
 )
 console.log('hydrated')

@@ -40,7 +40,7 @@ export function App() {
 
       </Routes>
       
-      <Outlet /> 
+     
 
     </>
   )
