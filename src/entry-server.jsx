@@ -8,6 +8,6 @@ export function render(url, context) {
       <App />  
     
     </StaticRouter>, 
-  <Outlet />
+
   )
 }
