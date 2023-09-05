@@ -6,7 +6,7 @@ ReactDOM.hydrateRoot(
   document.getElementById('app'),
   <BrowserRouter >
     <App />
-    <Outlet />
+   
   </BrowserRouter>,
 
 )
