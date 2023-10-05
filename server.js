@@ -71,8 +71,7 @@ export async function createServer(
 
   app.get("/message", (_, res) => res.send("Hello from express!"));
 
-   
-
+  
   app.use('*', async (req, res) => {
     try {
       const url = req.originalUrl
