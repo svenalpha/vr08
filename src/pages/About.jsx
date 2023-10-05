@@ -1,6 +1,6 @@
-import { addAndMultiply } from '../add'
-import { multiplyAndAdd } from '../multiply'
-import "../app.css";
+//import { addAndMultiply } from '../add'
+//import { multiplyAndAdd } from '../multiply'
+//import "../app.css";
 
 export default function About() {
   return (
