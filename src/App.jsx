@@ -8,7 +8,8 @@ const routes = Object.keys(pages).map((path) => {
   const name = path.match(/\.\/pages\/(.*)\.jsx$/)[1]
   return {
     name,
-    path: name === 'Home' ? '/' : `/${name.toLowerCase()}`,
+   /* path: name === 'Home' ? '/' : `/${name.toLowerCase()}`,  */
+   path: name === 'Home' ? '/' : 'name',
     component: pages[path].default,
   }
 })
