@@ -56,14 +56,14 @@ export async function createServer(
     })
     // use vite's connect instance as middleware
     app.use(vite.middlewares)
-  } else {
+  } /* else {
     app.use((await import('compression')).default())
     app.use(
       (await import('serve-static')).default(resolve('dist/client'), {
         index: false,
       }),
     )
-  }
+  }  */
 
 
 
