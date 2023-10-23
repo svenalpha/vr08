@@ -1,9 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import express from 'express'
 /*  import express from '../vr08/node_modules/express/lib/express.js';   */
 
-import express from 'express'; 
+
 
 
 
@@ -56,14 +57,14 @@ export async function createServer(
     })
     // use vite's connect instance as middleware
     app.use(vite.middlewares)
-  } /* else {
+  }  else {
     app.use((await import('compression')).default())
     app.use(
       (await import('serve-static')).default(resolve('dist/client'), {
         index: false,
       }),
     )
-  }  */
+  }  
 
 
 

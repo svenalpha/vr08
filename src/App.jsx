@@ -1,4 +1,7 @@
+import {useEffect, useState} from "react";
+
 import { Link, Route, Routes, Outlet } from 'react-router-dom'
+import { app_annexe } from './app_annexe'
 
 // Auto generates routes from files under ./pages
 // https://vitejs.dev/guide/features.html#glob-import
@@ -14,9 +17,21 @@ const routes = Object.keys(pages).map((path) => {
 })
 
 export function App() {
-  return (
-    <>
-      <nav>
+console.log("in App pages = ",pages);
+console.log("in App routes = ",routes);  
+
+const [Show, setShow] = useState(false);
+
+useEffect(()=>{setShow(true)},[]);
+
+if (!Show) {return null}
+
+
+  return (<>
+ 
+    <div>   
+<nav>
+
         <ul>
           {routes.map(({ name, path }) => {
             return (
@@ -26,15 +41,45 @@ export function App() {
             )
           })}
         </ul>
-      </nav>
-      <Routes>
+</nav>      
+ </div>
+    
+
+
+
+ {/* 
+<nav>
+  <ul>
+  <li><Link to="/">Home </Link></li>
+  <li><Link to="/about">About</Link></li>
+  <li><Link to="/env">Env</Link></li>
+  <li><Link to="/extra">Extra</Link></li>
+  </ul> 
+</nav>    
+      */}    
+ {app_annexe()}   
+      
+
+
+
+<Routes>
         {routes.map(({ path, component: RouteComp }) => {
-          return <Route key={path} path={path} element={<RouteComp />} ></Route>
+          console.log("RouteComp = ",RouteComp);
+          return <Route key={path} path={path} element={<RouteComp />}></Route>
         })}
       </Routes>
-      
-     
+       
+{/*        
+ <Routes>
+  <Route key="/" path="/" element={<Home />} />
+  <Route key="/About" path="/About" element={<About />} />
+  <Route key="/Env" path="/Env" element={<Env />} />
+  <Route key="/Extra" path="/Extra" element={<Extra />} />
+ </Routes>
+    */}
 
-    </>
-  )
+
+    </>)
 }
+
+

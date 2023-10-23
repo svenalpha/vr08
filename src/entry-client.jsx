@@ -10,4 +10,4 @@ ReactDOM.hydrateRoot(
   </BrowserRouter>,
 
 )
-console.log('hydrated')
+console.log('in entry-client.....hydrated hydrated hydrated')
