@@ -108,3 +108,9 @@ import path from "path";
           return <Route key={path} path={path} element={<RouteComp />} ></Route>
         })}
 </Routes>   
+
+
+useEffect(()=>{setShow(true)},[]);
+
+if (!Show) {return null}
+
