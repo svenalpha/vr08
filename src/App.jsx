@@ -22,6 +22,10 @@ console.log("in App routes = ",routes);
 
 const [Show, setShow] = useState(false);
 
+useEffect(()=>{setShow(true)},[]);
+
+if (!Show) {return null}
+
 
 
 
